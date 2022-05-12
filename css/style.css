@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div:first-child {
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+div::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    float: right;
+}
+
+.one, .two, .three {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+.one {
+    float: left;
+}
+.two {
+    float: left;
+}
+.three {
+    float: right;
+}
