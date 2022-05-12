@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap 5 explained</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+section {
+    padding: 50px 0;
+}
+    </style>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-secondary">
+                <i class="bi bi-balloon-heart"></i> Bootstrap
+            </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">About Bootsrap</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#examples" class="nav-link">Examples</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a href="#docs" class="nav-link">Documentation</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a href="#docs" class="btn btn-warning">Documentation</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- main image and greeting text -->
+<section id="greeting">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-2 fw-bold">Bootstrap 5</div>
+                    <div class="display-5 text-muted">Build fast, responsive sites</div>
+                </h1>
+                <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptatibus.</p>
+                <a href="#download" class="btn btn-secondary btn-lg">Get started</a>
+                <!-- open sidebar / offcanvas -->
+                <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas"
+                role="button" aria-controls="sidebar">
+                    Learn more...
+                </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img class="img-fluid" src="images/Bootstrap-5.webp" alt="Bootstrap">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- documentation -->
+<section id="docs" class="bg-light mt-5">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Docs</h2>
+            <p class="lead text-muted">Choose a topic.</p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center g-0">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Getting started</h4>
+                        <p class="lead card-subtitle">Let's start learning Bootstrap</p>
+                        <p class="display-5 my-4 text-primary fw-bold">Bootstrap</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia quam odio in itaque recusandae! Explicabo tenetur labore corrupti dolorem.</p>
+                        <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" class="btn btn-outline-primary btn-lg mt-3">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9 col-lg-4">
+                <!-- changes -->
+                <div class="card border-primary border-2">
+                    <!-- new entry header -->
+                    <div class="card-header text-center text-primary">Hello world</div>
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Getting started</h4>
+                        <p class="lead card-subtitle">Let's start learning Bootstrap</p>
+                        <p class="display-5 my-4 text-primary fw-bold">Bootstrap</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia quam odio in itaque recusandae! Explicabo tenetur labore corrupti dolorem.</p>
+                        <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" class="btn btn-outline-primary btn-lg mt-3">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Getting started</h4>
+                        <p class="lead card-subtitle">Let's start learning Bootstrap</p>
+                        <p class="display-5 my-4 text-primary fw-bold">Bootstrap</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia quam odio in itaque recusandae! Explicabo tenetur labore corrupti dolorem.</p>
+                        <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" class="btn btn-outline-primary btn-lg mt-3">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- topics at a glance -->
+<section id="topics">
+    <div class="container-md">
+        <div class="text-center">
+            <h2>Bootstrap topics</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, doloremque?</p>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+                <img src="http://picsum.photos/800/600" class="img-fluid" alt="rand">
+            </div>
+            <div class="col-lg-6">
+                <!-- accordion -->
+                <div class="accordion" id="chapters">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                            Open accordion</button>
+                        </h2>
+                        <div id="chapter-1" class="accordion-collapse collapse show" 
+                        aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ratione!</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, culpa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                            Open accordion</button>
+                        </h2>
+                        <div id="chapter-2" class="accordion-collapse collapse" 
+                        aria-labelledby="heading-2" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ratione!</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, culpa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                            Open accordion</button>
+                        </h2>
+                        <div id="chapter-3" class="accordion-collapse collapse" 
+                        aria-labelledby="heading-3" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ratione!</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, culpa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- reviews list -->
+<section id="examples" class="bg-light">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2><i class="bi bi-moon-stars"></i> Bootstrap Examples</h2>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, culpa!</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="mb-1">Album</h5>
+                        <p class="mb-1">Simple one-page template for photo galleries, portfolios, and more.</p>
+                        <small>Created by Roman</small>
+                    </div>
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h5 class="mb-1">Album</h5>
+                        <p class="mb-1">Simple one-page template for photo galleries, portfolios, and more.</p>
+                        <small>Created by Roman</small>
+                    </div>
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h5 class="mb-1">Album</h5>
+                        <p class="mb-1">Simple one-page template for photo galleries, portfolios, and more.</p>
+                        <small>Created by Roman</small>
+                    </div>
+                    <div class="list-group-item py-3">
+                        <div class="pb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h5 class="mb-1">Album</h5>
+                        <p class="mb-1">Simple one-page template for photo galleries, portfolios, and more.</p>
+                        <small>Created by Roman</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact form -->
+<!-- fform-control, form-label, form-select, input-group, input-group-text -->
+<section id="contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Contact us</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, error.</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form>
+                    <label for="email" class="form-label">Email</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                    </div>
+                    <label for="name" class="form-label">Name</label>
+                    <div class="mb-4 input-group">
+                        <input type="text" class="form-control" id="name" placeholder="Roman">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    </div>
+                    <label for="subject" class="form-label">What is your question about?</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text"><i class="bi bi-patch-question"></i></span>
+                        <select name="" id="subject" class="form-select">
+                            <option value="install">Installation</option>
+                            <option value="docs">Documentation</option>
+                            <option value="bestpractice">Best practices</option>
+                        </select>
+                    </div>
+                    <div class="form-floating mb-4 mt-5">
+                        <textarea class="form-control" id="question" style="height: 140px;"></textarea>
+                        <label for="question" class="form-label">Your question</label>
+                    </div>
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- get updates / modal trigger -->
+<section class="bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Modals explained</h2>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, nostrum.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur iusto consectetur similique dolore? Ratione fuga perspiciatis laborum id soluta aspernatur quas, ducimus labore rerum error consectetur est numquam quo maiores autem? Praesentium adipisci veritatis, nemo eligendi libero commodi recusandae.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                    Register for newsletter
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- modal itself -->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title"
+aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Get updates</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nemo exercitationem ipsa cupiditate autem possimus reprehenderit nobis consequuntur saepe voluptate quo in non ducimus eveniet unde adipisci illo numquam maxime quis, quos quae ab dolorem! Natus libero eius sapiente, voluptates recusandae provident cupiditate dignissimos voluptate, expedita sed culpa molestias vero?</p>
+                <label for="modal-email" class="form-label">Email</label>
+                <input type="email" id="modal-email" class="form-control" placeholder="email@example.com">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-end" id="sidebar" tabindex="-1" 
+aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">Bootstrap</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptas alias corporis esse nesciunt. Velit totam laborum, perferendis laudantium aperiam maiores ea dolorum incidunt tempore culpa sed enim eos voluptatem distinctio. Tenetur consequuntur iste, quos laboriosam libero pariatur rem error facilis veritatis, molestiae officiis labore omnis cupiditate nihil sapiente exercitationem!</p>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

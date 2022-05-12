@@ -1,0 +1,49 @@
+@media(max-width: 900px) {
+    header {
+        height: auto;
+
+        .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                margin: 0;
+            }
+            nav {
+                align-self: auto;
+                li:last-child {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    .gallery {
+        .container {
+            grid-template-columns: 1fr 1fr;
+            padding: 5px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    header {
+        ul {
+            flex-direction: column;
+            li {
+                margin: 0;
+                padding: 0;
+                a {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .gallery {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+}

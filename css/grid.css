@@ -1,0 +1,40 @@
+html, body {
+    background-color: #3F3047;
+    height: 100%;
+}
+.container {
+    margin: auto;
+    padding: 0;
+}
+.container > div {
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: #EEE7E9;
+    text-shadow: 0 0 2px #3F3047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container > div:nth-child(1), .container > div:nth-child(5), 
+.container > div:nth-child(9) {
+    background-color: #EEF36A;
+}
+.container > div:nth-child(2), .container > div:nth-child(6), 
+.container > div:nth-child(10) {
+    background-color: #DD99BB;
+}
+.container > div:nth-child(3), .container > div:nth-child(7), 
+.container > div:nth-child(11) {
+    background-color: #9BC995;
+}
+.container > div:nth-child(4), .container > div:nth-child(8), 
+.container > div:nth-child(12) {
+    background-color: #5171A5;
+}
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 100px, 100px;
+}
